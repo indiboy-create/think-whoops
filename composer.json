@@ -1,0 +1,55 @@
+{
+    "name": "youvision/think-whoops",
+    "description": "ThinkPHP 8 的 Whoops 异常调试接管组件，提供更友好的错误堆栈页面",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "thinkphp",
+        "thinkphp8",
+        "whoops",
+        "exception",
+        "debug"
+    ],
+    "authors": [
+        {
+            "name": "youvision"
+        },
+        {
+            "name": "xiaodi",
+            "email": "liangjinbiao@live.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "topthink/framework": "^8.0",
+        "filp/whoops": "^2.19"
+    },
+    "autoload": {
+        "psr-4": {
+            "Youvision\\ThinkWhoops\\": "src/"
+        }
+    },
+    "extra": {
+        "think": {
+            "services": [
+                "Youvision\\ThinkWhoops\\Service"
+            ],
+            "config": {
+                "whoops": "config/whoops.php"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "archive": {
+        "exclude": [
+            "/vendor",
+            "/tests",
+            "/runtime",
+            "/composer.lock"
+        ]
+    }
+}
