@@ -13,11 +13,12 @@
     ],
     "authors": [
         {
-            "name": "youvision"
+            "name": "indiboy-create",
+            "homepage": "https://github.com/indiboy-create"
         },
         {
-            "name": "xiaodi",
-            "email": "liangjinbiao@live.com"
+            "name": "AI",
+            "role": "Developer"
         }
     ],
     "require": {
